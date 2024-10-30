@@ -8,10 +8,10 @@ const port = 3000;
 
 // Update CORS settings
 app.use(cors({
-    origin: ['https://vigh24.github.io', 'http://localhost:8000'],
+    origin: ['https://vigh24.github.io', 'http://localhost:8000', '*'],
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin'],
-    credentials: true
+    credentials: false
 }));
 
 // Initialize Discord client with all required intents
