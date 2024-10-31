@@ -8,9 +8,9 @@ const port = 3000;
 
 // Update CORS settings
 app.use(cors({
-    origin: ['https://vigh24.github.io', 'http://localhost:8000', '*'],
+    origin: ['https://vigh24.github.io', 'http://localhost:8000', 'http://localhost:3000'],
     methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
     credentials: false
 }));
 
